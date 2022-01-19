@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing home</title>
+
+    <!-- goofle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="static\styles.css">
+
+</head>
+<body>
+    
+    <center>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div>
+                    <img src="https://media.istockphoto.com/photos/property-insurance-house-miniature-covered-by-hands-picture-id1137591078?k=20&m=1137591078&s=612x612&w=0&h=fEv4qrUNFV8jrchrUkTRkiPWtwHh1j-02-WXKSOOW6w=" alt="" height="50" width="50">
+                    <a class="navbar-brand mb-0 h1" href="#">Edificio De Casa</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- body -->
+        <div class="container">
+
+            <form action="{{url_for('result')}}" class="row g-3 mt-2" method="post">
+                
+                <!-- area -->
+                <div class="col-md-6">
+                    <label for="area" class="form-label">Area of the house</label>
+                    <input type="number" class="form-control" id="area" name="area" min="0" placeholder="0">
+                </div>
+
+                <!-- bedrooms -->
+                <div class="col-md-6">
+                    <label for="bedrooms" class="form-label">No. of bedrooms</label>
+                    <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0" placeholder="0">
+                </div>
+
+                <!-- bathrooms -->
+                <div class="col-md-6">
+                    <label for="bathrooms" class="form-label">No. of bathrooms</label>
+                    <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0" placeholder="0">
+                </div>
+
+                <!-- stories -->
+                <div class="col-md-6">
+                    <label for="stories" class="form-label">No. of stories</label>
+                    <input type="number" class="form-control" id="stories" name="stories" min="1" placeholder="1">
+                </div>
+
+                <!-- parking -->
+                <div class="col-md-6">
+                    <label for="parking" class="form-label">No. of parking</label>
+                    <input type="number" class="form-control" id="parking" name="parking" min="0" placeholder="0">
+                </div>
+
+                <!-- mainroad -->
+                <div class="col-md-6">
+                    <label for="mainroad" class="form-label">Located in mainroad</label>
+                    <select name="mainroad" id="mainroad">
+                        <option>--Choose--</option>
+                        <option value=1>yes</option>
+                        <option value=0>no</option>
+                    </select>
+                </div>
+
+                <!-- guestroom -->
+                <div class="col-md-6">    
+                    <label for="guestroom" class="form-label">Guestroom</label>
+                    <select name="guestroom" id="guestroom">
+                        <option>--Choose--</option>
+                        <option value=1>Available</option>
+                        <option value=0>Not Available</option>
+                    </select>
+                </div>
+
+                <!-- basement -->
+                <div class="col-md-6">    
+                    <label for="basement" class="form-label">Basement</label>
+                    <select name="basement" id="basement">
+                        <option>--Choose--</option>
+                        <option value=1>Available</option>
+                        <option value=0>Not Available</option>
+                    </select>
+                </div>
+
+                <!-- hotwaterheating   -->
+                <div class="col-md-6">    
+                    <label for="hotwaterheating" class="form-label">Hotwaterheating</label>
+                    <select name="hotwaterheating" id="hotwaterheating">
+                        <option>--Choose--</option>
+                        <option value=1>Available</option>
+                        <option value=0>Not Available</option>
+                    </select>
+                </div>       
+
+                <!-- airconditioning -->
+                <div class="col-md-6">    
+                    <label for="airconditioning" class="form-label">Airconditioning</label>
+                    <select name="airconditioning" id="airconditioning">
+                        <option> --Choose--</option>
+                        <option value=1>Available</option>
+                        <option value=0>Not Available</option>
+                    </select>
+                </div>     
+
+                <!-- prefarea -->
+                <div class="col-md-6">    
+                    <label for="prefarea" class="form-label">Prefarea</label>
+                    <select name="prefarea" id="prefarea">
+                        <option> --Choose--</option>
+                        <option value=1>Available</option>
+                        <option value=0>Not Available</option>
+                    </select>
+                </div>
+
+                <!-- furnishingstatus -->
+                <div class="col-md-6">    
+                    <label for="furnishingstatus" class="form-label">Furnishingstatus</label>
+                    <select name="furnishingstatus" id="furnishingstatus">
+                        <option> --Choose--</option>
+                        <option value=1>furnished</option>
+                        <option value=0.5>semi-furnished</option>
+                        <option value=0>unfurnished</option>
+                    </select>
+                </div>
+
+                <!-- submit -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Estimate prize</button>
+                </div>
+            </form>
+        </div>
+
+        
+
+    </center>
+
+</body>
+</html>

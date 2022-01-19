@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing result</title>
+
+    <!-- goofle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="static\styles.css">
+
+</head>
+<body>
+    
+    <center>
+
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div>
+                    <img src="https://media.istockphoto.com/photos/property-insurance-house-miniature-covered-by-hands-picture-id1137591078?k=20&m=1137591078&s=612x612&w=0&h=fEv4qrUNFV8jrchrUkTRkiPWtwHh1j-02-WXKSOOW6w=" alt="" height="50" width="50">
+                    <a class="navbar-brand mb-0 h1" href="/">Edificio De Casa</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="box">
+
+                <h5>The price will be Rs {{result}}/-</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-align-center" colspan="2">House Details</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Area of the house</td>
+                            <td>{{input[0]}} sq.ft</td>
+                        </tr>
+                        <tr>
+                            <td>No of bedrooms</td>
+                            <td>{{input[1]}}</td>
+                        </tr>
+                        <tr>
+                            <td>No of bathrooms</td>
+                            <td>{{input[2]}}</td>
+                        </tr>
+                        <tr>
+                            <td>No of stories</td>
+                            <td>{{input[3]}}</td>
+                        </tr>
+                        <tr>
+                            <td>No of parking space</td>
+                            <td>{{input[9]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Located in mainroad</td>
+                            <td>{{input[4]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Guestroom available</td>
+                            <td>{{input[5]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Basement available</td>
+                            <td>{{input[6]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Hot water available</td>
+                            <td>{{input[7]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Airconditioning available</td>
+                            <td>{{input[8]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Prefarea available</td>
+                            <td>{{input[10]}}</td>
+                        </tr>
+                        <tr>
+                            <td class="spl">Furnishing status</td>
+                            <td class="spl">{{input[11]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+
+            </div>
+        </div>
+
+
+    </center>
+
+</body>
+</html>
